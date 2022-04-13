@@ -1,0 +1,248 @@
+/* defult-css */
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+.container{
+    width: 1240px;
+    margin: auto;
+}
+/* header-section */
+.header-section {
+}
+.header-section .menu {
+}
+.header-section .menu ul {
+    background-color: #000000;
+    text-align: center;
+}
+.header-section .menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 30px 15px;
+    font-size: 15px;
+}
+.header-section .menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 2nd menu */
+.header-section .menu ul li ul{
+    position: absolute;
+    background-color: black;
+    top: 70px;
+    opacity: 0;
+    visibility: hidden;
+    border-top: 5px solid #08f;
+}
+.header-section .menu ul li ul li{
+    width: 250px;
+    display: block;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(51, 50, 50);
+    
+}
+.header-section .menu ul li ul li a{}
+
+/* hover */
+.header-section .menu ul li:hover >a{
+    color: #ddd;
+}
+.header-section .menu ul li:hover > ul{
+   opacity: 1;
+   visibility: visible;
+}
+.header-section .menu ul li ul li:hover{
+    background-color: blue;
+   
+}
+
+/* 3rd-menu */
+.header-section .menu ul li ul li ul{
+    left: 100%;
+    top: 37px;
+    
+}
+.header-section .menu ul li ul li ul li{}
+.header-section .menu ul li ul li ul li a{}
+
+/* banner-section */
+.banner{}
+.banner .banner-image{
+    background: url(./imsge/young-mens.jpg) bottom no-repeat;
+    background-size: cover;
+    height: 650px;
+}
+.banner .banner-image h1{
+    background-color: white;
+    display: inline;
+    padding: 15px 30px;
+    position: absolute;
+    top: 254px;
+    left: 600px;
+    font-size: 25px;
+}
+.banner .banner-image h3{
+    background-color: white;
+    display: inline;
+    padding: 5px 543px;
+    position: absolute;
+    top: 340px;
+    left: 83px;
+    font-size: 15px;
+}
+.banner .banner-image button{ 
+    background-color: red;
+    color: white;
+    display: inline;
+    padding: 9px 14px;
+    position: absolute;
+    top: 132px;
+    left: 530px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+}
+.banner .banner-image button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid red;
+}
+
+/* list-style-position-outside  */
+.position-outside .list-outside{  
+    box-shadow: 0px 0px 6px 4px rgb(248, 244, 244);
+    /* padding: 38px; */
+    margin: 10px 0px 0px 0px;
+}
+.position-outside .list-outside h1{
+    text-align: center;
+    padding: 40px 0px 20px 0px;
+}
+.position-outside .list-outside .outside{
+    list-style-position: outside;
+    text-align: center;
+}
+
+/* list-style-position-inside */
+.position-inside .list-inside{
+    padding: 40px;
+    box-shadow: 0px 0px 8px 6px rgb(248, 244, 244);
+}
+.position-inside .list-inside h1{
+    text-align: center;
+    padding: 40px 0px 20px 0px;
+}
+.position-inside .list-inside .inside{
+    list-style-position: outside;
+    text-align: center;
+}
+
+/* subscribe-section */
+.subscribe{
+    background-color: #f2f2f2;
+    padding: 60px;
+    margin-bottom: 25px;
+}
+.subscribe .input-field{
+    text-align: center;
+}
+.subscribe .input-field .email-box{
+    border: 1px solid red;
+    font-size: 18px;
+    text-align: left;
+    width: 600px;
+    height: 53px;
+}
+
+.subs-button{
+    padding: 16px 50px;
+    margin-left: -5px;
+    border: 1px solid red;
+    font-size: 18px;
+    background-color: red;
+    transition: .4s;
+    color: white;
+}
+.subs-button:hover{
+    color: red;
+    background-color: white;
+}
+
+
+/* list-style-type */
+.list-style-type h1{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.list-style-type .list{
+    border: 2px dotted gray;
+    padding: 50px;
+    border-bottom: none;
+}
+
+.list-style-type .list .a{
+	list-style-type: lower-roman;
+	display: inline-block;
+    width: 28%;
+    margin-left: 5%;
+    line-height: 25px;
+}
+.list-style-type .list .b{
+	list-style-type: lower-square;
+	display: inline-block;
+    width: 28%;
+    margin-left: 5%;
+    line-height: 25px;
+}
+.list-style-type .list .c{
+	list-style-type: lower-greek;
+	display: inline-block;
+    width: 28%;
+    margin-left: 5%;
+    line-height: 25px;
+}
+
+/* footer-section */
+.footer{ 
+    background-color: #000;
+}
+.footer p{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px
+}
+
+.social-icon{ 
+    background-color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.social-icon ul{}
+.social-icon ul li{
+    display: inline-block;
+    padding: 15px 5px;
+}
+
+.social-icon .fa-brands{
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: .4s;
+    background-color: #5ea5fa;
+    color: #0c0c0c;
+}
+
+.social-icon .fa-brands:hover{
+    background-color: rgba(241, 241, 69, 0.735);
+}
